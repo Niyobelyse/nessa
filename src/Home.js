@@ -1,7 +1,14 @@
 import React from 'react'
-import { FaArrowRight, FaTag } from 'react-icons/fa';
+import { FaArrowRight, FaTag, FaTwitter } from 'react-icons/fa';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
+import 'animate.css';
+
+
+import OwlCarousel from 'react-owl-carousel';  
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Home = () => {
   return (
@@ -11,8 +18,8 @@ const Home = () => {
       <Navbar/>
       <div className='bgimage mt-0'>
         <div className='p-24'>
-        <h1 className='text-white text-6xl ml-8 mt-32 font-bold'>NESSA</h1>
-        <h3 className='text-white mt-8 ml-8 font-medium text-3xl'>National Examination and School Inspection Authority</h3>
+        <h1 className='text-white text-6xl ml-8 mt-32 font-bold animate__animated animate__bounce animate__repeat animate__slower'>NESSA</h1>
+        <h3 className='text-white mt-8 ml-8 font-medium text-3x animate__animated animate__bounce animate__slower animate__repeat'>National Examination and School Inspection Authority</h3>
         </div>
         
       </div>
@@ -130,9 +137,179 @@ const Home = () => {
 
 
 </div>
-</div>
+{/* <div className='twitter mt-14'>
+    <div className='grid grid-cols-2'>
+        <div className='bg-blue-600 rounded-full w-10 h-10 p-2 ml-28 mt-16'><FaTwitter className='text-white font-bold text-2xl'/></div>
+        <div className='ml-52 w-1/2 mt-16'>
+        <Link class="prev px-8 font-bold text-3xl" onclick="plusSlides(-1)">❮</Link>
+        <Link class="next font-bold text-3xl" onclick="plusSlides(1)">❯</Link>
+        </div>
+    </div>
+    
+    <div className='grid grid-cols-3'>
+    <div>
+        <h1 className='mt-12 font-bold text-blue-900'>@NESA_Rwanda</h1>
+    <p class="text-grey mt-8 indent-0">ITANGAZO KU NGENDO Z'ABANYESHURI BIGA BACUMBIKIRWA MU GIHE CYO GUSUBIRA MU MIRYANGO YABO (IGIHEMBWE CYA II UMWAKA W… <Link to="#" target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
+    </p>
+    <hr className='w-24'/>
+     <div className='inline-flex mt-8'>
+     <p>2 hours ago</p>
+     <FaTwitter className='ml-48 font-bold text-3xl text-blue-700'/>
+     </div>
+
+    </div>
 <div>
-</div>    
+<div>
+    <h1 className='mt-12'>NESA_Rwanda Replying to @U_munyamateka</h1>
+    <p className='mt-8 text-grey'>@U_munyamateka @REBRwanda @Rwanda_Edu icyo gihe bisuzumwa kubufatanye bwa NESA ,akarere ndetse n'ishuri umwana yigamo.</p>
+    <hr className='w-24'/>
+    </div>
+    <div className='inline-flex mt-12'>
+    <p>5 hours ago</p>
+     <FaTwitter className='font-bold text-3xl ml-48 text-blue-700'/>
+     </div>
+</div>
+
+     
+     <div>
+        <h1 className='mt-12 font-boldtext-blue-900'>@NESA_Rwanda</h1>
+    <p class="text-grey mt-8">ITANGAZO KU NGENDO Z'ABANYESHURI BIGA BACUMBIKIRWA MU GIHE CYO GUSUBIRA MU MIRYANGO YABO (IGIHEMBWE CYA II UMWAKA W… <Link to="#" target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
+    </p>
+    <hr className='w-24'/>
+     <div className='inline-flex mt-8'>
+     <p>3 hours ago</p>
+     <FaTwitter className='font-bold text-3xl ml-48 text-blue-700'/>
+     </div>
+
+    </div>
+    </div>
+</div> */}
+
+
+<div className='twitter mt-14'>  
+ 
+       <div class='' >            
+        <OwlCarousel items={3}  
+          className="owl-theme"
+          autoplay  
+          nav
+          autoplayTimeout={3000}
+          loop  
+          margin={8} > 
+           
+           <div>
+        <h1 className='mt-12 font-bold text-blue-900'>@NESA_Rwanda</h1>
+    <p class="text-grey mt-8 indent-0">ITANGAZO KU NGENDO Z'ABANYESHURI BIGA BACUMBIKIRWA MU GIHE CYO GUSUBIRA MU MIRYANGO YABO (IGIHEMBWE CYA II UMWAKA W… <Link to="#" target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
+    </p>
+    <hr className='w-24'/>
+     <div className='inline-flex mt-8'>
+     <p>2 hours ago</p>
+     <FaTwitter className='ml-48 font-bold text-3xl text-blue-700'/>
+     </div>
+
+    </div>  
+
+
+
+               <div>
+        <h1 className='mt-12 font-bold text-blue-900'>@NESA_Rwanda</h1>
+    <p class="text-grey mt-8 indent-0">ITANGAZO KU NGENDO Z'ABANYESHURI BIGA BACUMBIKIRWA MU GIHE CYO GUSUBIRA MU MIRYANGO YABO (IGIHEMBWE CYA II UMWAKA W… <Link to="#" target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
+    </p>
+    <hr className='w-24'/>
+     <div className='inline-flex mt-8'>
+     <p>2 hours ago</p>
+     <FaTwitter className='ml-48 font-bold text-3xl text-blue-700'/>
+     </div>
+
+    </div>
+
+
+        <div>
+        <h1 className='mt-12 font-bold text-blue-900'>@NESA_Rwanda</h1>
+    <p class="text-grey mt-8 indent-0">ITANGAZO KU NGENDO Z'ABANYESHURI BIGA BACUMBIKIRWA MU GIHE CYO GUSUBIRA MU MIRYANGO YABO (IGIHEMBWE CYA II UMWAKA W… <Link to="#" target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
+    </p>
+    <hr className='w-24'/>
+     <div className='inline-flex mt-8'>
+     <p>2 hours ago</p>
+     <FaTwitter className='ml-48 font-bold text-3xl text-blue-700'/>
+     </div>
+
+    </div>  
+ 
+          
+
+
+
+
+
+      </OwlCarousel>  
+      </div>  
+  
+      </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <div >
+    <div className='mt-24 ml-32 font-bold text-4xl'>Our Partners</div>
+    <div className='inline-flex mt-32 ml-3'>
+    <div ><img src='./images/REB_Logo.png' alt='koica' className='border h-32 w-32 p-8 mb-2 ml-36'/></div>
+    <div><img src='./images/enabel_logo_70.png' alt='' className='border h-32 w-32 p-8 ml-16'/></div>
+    <div ><img src='./images/Koica_Logo.jpeg' alt='' className='border w-32 h-32 p-8 ml-16'/></div>
+    <div ><img src='./images/Coat_04.png' alt='' className='border w-32 h-32 p-8 ml-16'/></div>
+    <div ><img src='./images/giz-logo.gif' alt='' className='border h-32 w-32 p-8 ml-14'/></div>
+    <div ><img src='./images/RP.png' alt='' className='border w-32 h-32 p-8 ml-14 '/></div>
+    </div>
+</div> */}
+
+
+<div className='mt-24 ml-32 font-bold text-4xl'>Our Partners</div>
+<div>  
+ 
+        <div className=''>            
+        <OwlCarousel items={6}  
+          className="owl-theme"
+          autoplay  
+          nav
+          autoplayTimeout={3000}
+          loop  
+          margin={6} > 
+          
+           <div ><img  className="img border" alt='1' src= {'./images/REB_Logo.png'}/></div>  
+           <div><img  className="img border " alt='2' src= {'./images/enabel_logo_70.png'}/></div>  
+           <div><img  className="img border " alt='3' src= {'./images/Koica_Logo.jpeg'}/></div>  
+           <div><img  className="img border" alt='4' src= {'./images/Coat_04.png'}/></div>  
+           <div><img className="img border " alt='5's rc= {'./images/giz-logo.gif'}/></div>  
+           <div><img className="img border " alt='6' src= {'./images/RP.png'}/></div>  
+           
+
+
+
+
+
+      </OwlCarousel>  
+      </div>  
+  
+      </div>  
+<Footer/>
+
+
+
+
+</div>
+   
 
     </>
   )
