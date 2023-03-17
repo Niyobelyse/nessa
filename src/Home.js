@@ -24,9 +24,9 @@ const Home = () => {
         
       </div>
      <div id='section_call_to_action'>
-<div className='grid sm:grid-cols-3 space-x-4 h-72 -translate-y-24'>
+<div className='grid sm:grid-cols-3 p-6 space-x-4 h-72 -translate-y-24'>
        
-<div class=" ml-8 w-96  p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div class=" ml-8 w-96  p-6 px-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <FaTag className='w-8 h-10 mb-2 text-blue-600 dark:text-gray-400'/>
     
     <Link to="#">
@@ -73,14 +73,14 @@ const Home = () => {
 
 <div>
 <div className='font-bold text-4xl ml-24 mt-14'>Latest News</div>
-<div className='grid grid-cols-3 gaps-3 px-16 mt-40'>
+<div className='grid grid-cols-3 gaps-3 px-32 mt-40'>
     
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <Link href="#">
+    <Link to="#">
         <img class="rounded-t-lg w-full" src="./WEB_3.jpg" alt="" />
     </Link>
     <div class="p-5">
-        <Link href="#">
+        <Link to="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
         </Link>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
@@ -92,11 +92,11 @@ const Home = () => {
 </div>
 
 <div class="max-w-sm ml-16 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <Link href="#">
+    <Link to="#">
         <img class="rounded-t-lg h-60 w-full" src="./WEB_4.jpg" alt="" />
     </Link>
     <div class="p-5">
-        <Link href="#">
+        <Link to="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
         </Link>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
@@ -108,11 +108,11 @@ const Home = () => {
 </div>
 
 <div class="max-w-sm ml-16 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <Link href="#">
+    <Link to="#">
         <img className="h-60  rounded-t-lg  w-full" src="./WEB_5.jpg" alt="" />
     </Link>
     <div class="p-5">
-        <Link href="#">
+        <Link to="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
         </Link>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
@@ -146,92 +146,63 @@ const Home = () => {
         </div>
     </div>
     
-    <div className='grid grid-cols-3'>
-    <div>
-        <h1 className='mt-12 font-bold text-blue-900'>@NESA_Rwanda</h1>
-    <p class="text-grey mt-8 indent-0">ITANGAZO KU NGENDO Z'ABANYESHURI BIGA BACUMBIKIRWA MU GIHE CYO GUSUBIRA MU MIRYANGO YABO (IGIHEMBWE CYA II UMWAKA W… <Link to="#" target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
-    </p>
-    <hr className='w-24'/>
-     <div className='inline-flex mt-8'>
-     <p>2 hours ago</p>
-     <FaTwitter className='ml-48 font-bold text-3xl text-blue-700'/>
-     </div>
-
-    </div>
-<div>
-<div>
-    <h1 className='mt-12'>NESA_Rwanda Replying to @U_munyamateka</h1>
-    <p className='mt-8 text-grey'>@U_munyamateka @REBRwanda @Rwanda_Edu icyo gihe bisuzumwa kubufatanye bwa NESA ,akarere ndetse n'ishuri umwana yigamo.</p>
-    <hr className='w-24'/>
-    </div>
-    <div className='inline-flex mt-12'>
-    <p>5 hours ago</p>
-     <FaTwitter className='font-bold text-3xl ml-48 text-blue-700'/>
-     </div>
-</div>
-
-     
-     <div>
-        <h1 className='mt-12 font-boldtext-blue-900'>@NESA_Rwanda</h1>
-    <p class="text-grey mt-8">ITANGAZO KU NGENDO Z'ABANYESHURI BIGA BACUMBIKIRWA MU GIHE CYO GUSUBIRA MU MIRYANGO YABO (IGIHEMBWE CYA II UMWAKA W… <Link to="#" target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
-    </p>
-    <hr className='w-24'/>
-     <div className='inline-flex mt-8'>
-     <p>3 hours ago</p>
-     <FaTwitter className='font-bold text-3xl ml-48 text-blue-700'/>
-     </div>
-
-    </div>
-    </div>
-</div> */}
+   */}
 
 
-<div className='twitter mt-14'>  
+<div className='twitter px-28 mt-14'> 
+
+    <div className='grid grid-cols-2'>
+        <div className='bg-blue-600 rounded-full w-10 h-10 p-2 ml-28 mt-16'><FaTwitter className='text-white font-bold text-2xl'/></div>
+        <div className='ml-52 w-1/2 mt-16'>
+        <Link class="prev px-8 font-bold text-3xl" onclick="nav(-1)">❮</Link>
+        <Link class="next font-bold text-3xl" onclick="nav(+1)">❯</Link>
+        </div>
+    </div> 
+
  
        <div class='' >            
         <OwlCarousel items={3}  
           className="owl-theme"
           autoplay  
-          nav
+          
           autoplayTimeout={3000}
           loop  
           margin={8} > 
            
-           <div>
-        <h1 className='mt-12 font-bold text-blue-900'>@NESA_Rwanda</h1>
+           <div className='px-2'>
+        <h1 className='mt-12 font-bold'><span className='email'>@NESA_Rwanda</span></h1>
     <p class="text-grey mt-8 indent-0">ITANGAZO KU NGENDO Z'ABANYESHURI BIGA BACUMBIKIRWA MU GIHE CYO GUSUBIRA MU MIRYANGO YABO (IGIHEMBWE CYA II UMWAKA W… <Link to="#" target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
     </p>
-    <hr className='w-24'/>
+    <hr className='w-80 font-bold mt-8'/>
      <div className='inline-flex mt-8'>
      <p>2 hours ago</p>
-     <FaTwitter className='ml-48 font-bold text-3xl text-blue-700'/>
+     <FaTwitter className='ml-48  text-blue-700'/>
      </div>
 
     </div>  
 
 
 
-               <div>
-        <h1 className='mt-12 font-bold text-blue-900'>@NESA_Rwanda</h1>
-    <p class="text-grey mt-8 indent-0">ITANGAZO KU NGENDO Z'ABANYESHURI BIGA BACUMBIKIRWA MU GIHE CYO GUSUBIRA MU MIRYANGO YABO (IGIHEMBWE CYA II UMWAKA W… <Link to="#" target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
-    </p>
-    <hr className='w-24'/>
-     <div className='inline-flex mt-8'>
+               <div className='px-2'>
+               <h1 className='mt-12'>NESA_Rwanda Replying to <span className='email'>@U_munyamateka</span> </h1>
+    <p className='mt-8 text-grey'>@U_munyamateka @REBRwanda @Rwanda_Edu icyo gihe bisuzumwa kubufatanye bwa NESA ,akarere ndetse n'ishuri umwana yigamo.</p>
+    <hr className='w-80 font-bold'/>
+     <div className='inline-flex mt-14'>
      <p>2 hours ago</p>
-     <FaTwitter className='ml-48 font-bold text-3xl text-blue-700'/>
+     <FaTwitter className='ml-48  text-blue-700'/>
      </div>
 
     </div>
 
 
         <div>
-        <h1 className='mt-12 font-bold text-blue-900'>@NESA_Rwanda</h1>
-    <p class="text-grey mt-8 indent-0">ITANGAZO KU NGENDO Z'ABANYESHURI BIGA BACUMBIKIRWA MU GIHE CYO GUSUBIRA MU MIRYANGO YABO (IGIHEMBWE CYA II UMWAKA W… <Link to="#" target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
+        <h1 className='mt-12'>NESA_Rwanda Replying to <span className='email'>@jmv200345</span></h1>
+    <p class="text-grey mt-8">mwaramutse, mushobora gusoma amabwiriza mugasobanukirwa neza <Link to="#" className='' target="_blank" rel="noreferrer">https://t.co/mzqxlYmj1q</Link>
     </p>
-    <hr className='w-24'/>
-     <div className='inline-flex mt-8'>
+    <hr className='w-80'/>
+     <div className='inline-flex mt-16'>
      <p>2 hours ago</p>
-     <FaTwitter className='ml-48 font-bold text-3xl text-blue-700'/>
+     <FaTwitter className='ml-48  text-blue-700'/>
      </div>
 
     </div>  
@@ -275,24 +246,24 @@ const Home = () => {
 </div> */}
 
 
-<div className='mt-24 ml-32 font-bold text-4xl'>Our Partners</div>
+<div className='mt-4 ml-32 font-bold text-2xl'>Our Partners</div>
 <div>  
  
-        <div className=''>            
+        <div className='px-40 mt-14'>            
         <OwlCarousel items={6}  
           className="owl-theme"
           autoplay  
           nav
           autoplayTimeout={3000}
           loop  
-          margin={6} > 
+          margin={30} > 
           
-           <div ><img  className="img border" alt='1' src= {'./images/REB_Logo.png'}/></div>  
-           <div><img  className="img border " alt='2' src= {'./images/enabel_logo_70.png'}/></div>  
-           <div><img  className="img border " alt='3' src= {'./images/Koica_Logo.jpeg'}/></div>  
-           <div><img  className="img border" alt='4' src= {'./images/Coat_04.png'}/></div>  
-           <div><img className="img border " alt='5's rc= {'./images/giz-logo.gif'}/></div>  
-           <div><img className="img border " alt='6' src= {'./images/RP.png'}/></div>  
+           <div claaName='w-6'><img  className="img border h-32 w-14 p-12" alt='1' src= {'./images/REB_Logo.png'}/></div>  
+           <div claaName='w-6'><img  className="img border h-32 w-14 p-12 " alt='2' src= {'./images/enabel_logo_70.png'}/></div>  
+           <div claaName='w-6'><img  className="img border h-32 w-14 p-12 " alt='3' src= {'./images/Koica_Logo.jpeg'}/></div>  
+           <div claaName='w-6'><img  className="img border h-32 w-14 p-12" alt='4' src= {'./images/Coat_04.png'}/></div>  
+           <div claaName='w-6'><img className="img border h-32 w-14 p-12 " alt='5' src= {'./images/giz.gif'}/></div>  
+           <div claaName='w-6'><img className="img border h-32 w-14 p-12 " alt='5' src= {'./images/RP.png'}/></div>  
            
 
 
